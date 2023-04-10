@@ -3,9 +3,10 @@ import styles from "./comissionitem.module.css"
 export default function ComissionItem({ comission }) {
 
     return (
+        <Link to={`/comissions/id/${comission.id}`}>
         <div className={styles.box}>
   
-            <Link to={`/comissions/id/${comission.id}`}>
+            
                 <div className={styles.imgBox}>
                 <img
                     className={styles.img1}
@@ -20,7 +21,7 @@ export default function ComissionItem({ comission }) {
                     src={comission.image3}
                     alt={comission.name} />
                 </div>
-            </Link>
+            
            
             
             <div className={styles.info}>
@@ -36,6 +37,6 @@ export default function ComissionItem({ comission }) {
             </div>
 
         </div>
-
+        </Link>
     );
 }
