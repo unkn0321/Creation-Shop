@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  align-self: center;
+  margin: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* body */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: white;
+}
+
+/* Layout */
+.mainLayout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  gap: 1em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  
+}
+
+.layoutHeader {
+  grid-area: header;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+
+}
+
+.layoutContent {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+}
+
+.layoutFooter {
+  grid-area: footer;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+
+}
+

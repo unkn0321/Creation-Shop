@@ -1,0 +1,74 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    background-color: rgba(68, 212, 212, 0.76);
+    font-size: 2rem;
+    align-self: center;
+    padding: 0 1rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.squre {
+
+    width: 3vw;
+    height: 3vw;
+    background-color: aliceblue;
+    transform: rotate(45deg);
+
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 0;
+}
+
+.text {
+    margin-top: 1rem;
+    font-size: 1vw;
+}
+
+.bar {
+    width: 15vw;
+    height: 1vw;
+    margin: 0 -4vw;
+    margin-top: 1vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.squreComplete {
+
+    composes: squre;
+    background-color: rgb(76, 76, 76);
+
+
+}
+
+.barComplete {
+    composes: bar;
+    background-color: rgb(76, 76, 76);
+}
+
+@media (min-width:768px) {
+    .squre {
+
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .text {
+        margin-top: 1rem;
+        font-size: 1.5vw;
+        padding: 0 1vw;
+    }
+}
