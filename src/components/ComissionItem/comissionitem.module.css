@@ -8,6 +8,12 @@
 
 }
 
+.box:hover
+{
+    transform: scale(1.1);
+    background-color: #3c3c3c00;
+}
+
 .info {
     display: flex;
     flex-direction: column;
