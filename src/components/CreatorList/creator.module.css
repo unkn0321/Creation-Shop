@@ -7,7 +7,7 @@
 }
 
 .creatorTitle {
-    background-color: rgba(68, 212, 212, 0.76);
+    font-family: 'Yusei Magic';
     font-size: 2rem;
     align-self: center;
     padding: 0 1rem;
@@ -16,7 +16,7 @@
 .creatorItem {
     padding-top: 1rem;
     text-align: center;
-    background-color: rgb(219, 219, 219);
+    background-color:#39737fb5;
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
